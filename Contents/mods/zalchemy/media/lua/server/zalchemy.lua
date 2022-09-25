@@ -5,7 +5,17 @@
 ---
 
 local function zalchemy_OnGameStart()
-    writeLog("ZALCH","zalchemy OnGameStart event handler called")
+  writeLog("ZalchemyLog","zalchemy OnGameStart event handler called")
+  local allitems = getAllItems()
+  local item
+  for i = 0, allitems:size() - 1 do
+    item = allitems:get(i)
+    writeLog("ZalchemyLog", "zalchemy items[" .. tostring(i) .. "]='" .. tostring(item) .. "'")
+    if item:getName() == "Hat_BaseballCap" then
+      writeLog("ZalchemyLog", "zalchemy found baseball cap")
+      item:setActualWeight(12.3)
+    end
+  end
 end
 
-Events.OnGameStart.Add(zalchemy_OnGameStart);
+Events.OnGameStart.Add(zalchemy_OnGameStart)
