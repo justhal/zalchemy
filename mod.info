@@ -1,0 +1,7 @@
+name=zalchemy
+poster=poster.png
+description=Mod for Project Zomboid to apply custom changes to items (and possibly other game objects in the future, such as traits, recipes, etc.) as desired in a highly-configurable and dynamic way.
+id=zalchemy
+url=https://github.com/justhal/zalchemy
+modversion=0.0.1
+pzversion=41.76

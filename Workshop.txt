@@ -1,0 +1,6 @@
+version=1
+title=zalchemy
+description=Mod for Project Zomboid to apply custom changes to items (and possibly other game objects in the future, such as traits, recipes, etc.) as desired in a highly-configurable and dynamic way.
+description=STILL UNDER DEVELOPMENT DOES NOT WORK YET DO NOT USE
+tags=Build 41;misc
+visibility=unlisted
